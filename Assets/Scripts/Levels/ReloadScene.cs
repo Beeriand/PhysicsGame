@@ -5,9 +5,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ReloadScene : MonoBehaviour
-{
+{   
+
     private void OnMouseUp()
     {
-        SceneManager.LoadScene(Application.loadedLevelName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
