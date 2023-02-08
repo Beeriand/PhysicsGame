@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LvLFaild : MonoBehaviour
 {
     public GameObject faild;
-    public string nextLevelName;
+
 
     private void Start()
     {
@@ -24,6 +24,6 @@ public class LvLFaild : MonoBehaviour
 
     void LoadNewLevel()
     {
-        SceneManager.LoadScene(nextLevelName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 }

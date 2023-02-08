@@ -21,6 +21,7 @@ public class Basket : MonoBehaviour
             Debug.Log("Pi³ka w koszu");
             levelComplited.SetActive(true);
             Invoke("LoadNewLevel", 3f);
+            
         }
     }
 
@@ -28,5 +29,6 @@ public class Basket : MonoBehaviour
     void LoadNewLevel()
     {
         SceneManager.LoadScene(nextLevelName);
+        
     }
 }
